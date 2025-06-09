@@ -1,0 +1,13 @@
+[
+    {
+        "name": "on_door_open",
+        "description": "Triggered when microwave door is opened.",
+        "actions": [
+            "sound_alert"
+        ],
+        "on": [
+            "microwave_door_open",
+            "main_door_open"
+        ]
+    }
+]

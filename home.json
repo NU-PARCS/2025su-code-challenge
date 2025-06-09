@@ -1,18 +1,26 @@
 [
   {
-    "name": "Close Microwave Door",
-    "code": "def machine1(current_time, home_data):\n  if home_data[\"microwave_door_open\"]:\n    print(\"microwave door open\")\n    return True\n  else:\n    return False"
+    "reminder": "Close Microwave Door",
+    "code": "def machine1(current_time, home_data):\n  if home_data[\"microwave_door_open\"]:\n    print(\"microwave door open\")\n    return True\n  else:\n    return False",
+    "repeat": 5,
+    "name": "microwave_door_open"
   },
   {
-    "name": "Call Son at 9pm today",
-    "code": "def machine2(current_time, home_data):\n  if current_time.hour >= 21:\n    print(\"at least 9pm\")\n    return True\n  else:\n    return False"
+    "reminder": "Call Son at 9pm today",
+    "code": "def machine2(current_time, home_data):\n  if current_time.hour >= 21:\n    print(\"at least 9pm\")\n    return True\n  else:\n    return False",
+    "repeat": -1,
+    "name": "call_son"
   },
   {
-    "name": "Time to go to bed",
-    "code": "def machine3(current_time, home_data):\n  if current_time.hour >= 22:\n    print(\"Time to go to bed\")\n    return True\n  else:\n    return False"
+    "reminder": "Time to go to bed",
+    "code": "def machine3(current_time, home_data):\n  if current_time.hour >= 22:\n    print(\"Time to go to bed\")\n    return True\n  else:\n    return False",
+    "repeat": -1,
+    "name": "go_to_bed"
   },
   {
-    "name": "Drink water in the morning",
-    "code": "def machine4(current_time, home_data):\n  if current_time.hour >= 8 and current_time.hour < 12:\n    print(\"Drink water in the morning\")\n    return True\n  else:\n    return False"
+    "reminder": "Drink water in the morning",
+    "code": "def machine4(current_time, home_data):\n  if current_time.hour >= 8 and current_time.hour < 12:\n    print(\"Drink water in the morning\")\n    return True\n  else:\n    return False",
+    "repeat": -1,
+    "name": "drink_water_morning"
   }
 ]
